@@ -13,7 +13,7 @@
 ## 项目结构
 
 |-dome_client  
-|-demo_server
+|-demo_server  
 |-README.md
 
 其中 demo_client 是服务的消费者  
