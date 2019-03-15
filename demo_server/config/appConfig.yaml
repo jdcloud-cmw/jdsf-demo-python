@@ -1,0 +1,22 @@
+consul:
+  config:
+    schema: http
+    port: 8500
+    address: 10.12.209.43
+  discover:
+    config:
+      serviceName: db-service
+      preferIpAddress: true
+      healthCheckUrl: /api/health/check
+      instanceId: python-db-service-demo-1
+app:
+  config:
+    serviceName: db-service
+    serviceIpAddress: 10.12.140.173
+    servicePort: 19300
+trace:
+  config:
+    simpleType: probabilistic
+    simpleRate: 1
+    traceUDPAddress: 127.0.0.1
+    traceUDPPort: 5775
