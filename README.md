@@ -8,7 +8,7 @@
 
 * 项目使用Python 2.7 开发 使用 pip 进行包管理 ，请在试用前准备好相应的环境，如果测试环境已经安装了 [open-tracing-python-flask](https://github.com/opentracing-contrib/python-flask)  和 [jaeger-client-python](https://github.com/jaegertracing/jaeger-client-python) 推荐在开发环境安装 `virtualenv` 然后使用包管理安装本 demo 需要安装的包
 
-* 如果使用 PyCharm 进行开发，不要使用默认的 flash 调试环境配置 ，因`flash run` 命令无法运行`__name__ == '__main__'`一些代码中指定的端口等配置，如果需要请修改启动部分代码。
+* 如果使用 PyCharm 进行开发，不要使用默认的 flask 调试环境配置 ，因`flask run` 命令无法运行`__name__ == '__main__'`一些代码中指定的端口等配置，如果需要请修改启动部分代码。
 
 ## 项目结构
 
