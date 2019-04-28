@@ -1,7 +1,8 @@
 try:
- from urlparse import urlparse
+    from urllib.parse import urlparse
 except ImportError:
- from urllib.parse import urlparse
+    from urlparse import urlparse
+
 import re
 import requests
 

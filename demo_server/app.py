@@ -17,7 +17,7 @@ def hello_world():
 
 @app.route("/db/gameinfo/getgameinfo")
 def get_game_info():
-    game_id = request.args.get('gameId')
+    game_id = request.args.get('gameid')
     game_list = []
     game_list.append("test-game-0")
     game_list.append("test-game-1")
@@ -28,7 +28,7 @@ def get_game_info():
     hash_code_game_id = hash(game_id)
     list_count = len(game_list)
     index = hash_code_game_id % list_count
-    result = {"gameId": game_id, "gameName": game_list[index]}
+    result = {"gameid": game_id, "gameName": game_list[index]}
     return jsonify(result)
 
 
