@@ -12,8 +12,8 @@ consul:
 app:
   config:
     serviceName: db-service
-    serviceIpAddress: 10.12.140.173
-    servicePort: 19300
+    serviceIpAddress: 10.12.142.83
+    servicePort: 5000
 trace:
   config:
     simpleType: probabilistic

@@ -30,9 +30,9 @@ README.md 此描述文件
 
 * requests： Python HttpClient 请求类库，在项目中封装成为负载请求客户端
 
-* jaeger-client： opentracing jaeger api 实现库，实现了 opentraing 1.0版本，在此文档编写时还未发布实现opentraing 2.0 api 的类库，因此在项目中约束了版本。
+* jaeger-client： opentracing jaeger api 实现库。
 
-* Flask-OpenTracing：flask opentracing api 类库，实现了请求拦截，自动生成请求 span 的功能 因新版本实现了 opentracing 2.0 版本的 api 与jaeger-client 不兼容因此项目引用了一个指定的老版本。
+* Flask-OpenTracing：flask opentracing api 类库。
 
 ## 配置及使用说明
 
@@ -74,8 +74,8 @@ pip install opentracing_instrumentation
 pip install python-consul
 pip install pyYaml
 pip install requests
-pip install jaeger-client==3.2.0
-pip install Flask-OpenTracing==0.1.8
+pip install jaeger-client
+pip install Flask-OpenTracing
 ```
 
 安装上面的类库 ，然后启动应用即可，如果无法调用注册中心和调用链请使用 如下命令启动应用

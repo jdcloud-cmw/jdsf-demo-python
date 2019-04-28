@@ -12,7 +12,7 @@ consul:
 app:
   config:
     serviceName: python-consul-demo
-    serviceIpAddress: 10.12.140.173
+    serviceIpAddress: 10.12.142.83
     servicePort: 19300
 trace:
   config:

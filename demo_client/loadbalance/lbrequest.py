@@ -1,4 +1,7 @@
-from urlparse import urlparse
+try:
+ from urlparse import urlparse
+except ImportError:
+ from urllib.parse import urlparse
 import re
 import requests
 
@@ -18,7 +21,7 @@ class LoadBalanceSession(requests.Session):
                 request_domain = res.netloc
                 if request_domain not in service_cache.keys():
                     RegistryService.load_remote_service_cache(request_domain)
-                if request_domain in  service_cache.keys() and service_cache[request_domain] is not None:
+                if request_domain in service_cache.keys() and service_cache[request_domain] is not None:
                     health_request_service = service_cache[request_domain].get_service()
                     request_address = health_request_service.service_host
                     request_port = health_request_service.service_port
